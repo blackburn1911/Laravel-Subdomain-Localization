@@ -60,7 +60,7 @@ class Localize
      */
     public function getAvailableLocales()
     {
-        return app()['config']->get('localization.available_locales');
+        return array_keys(app()['config']->get('localization.available_locales'));
     }
 
     /**
